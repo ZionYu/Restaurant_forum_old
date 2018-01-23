@@ -56,7 +56,7 @@ def set_restaurant
   @restaurant = Restaurant.find(params[:id])
 end
 def restaurant_params
-  params.require(:restaurant).permit(:name, :tel, :adress, :opening_hours, :description, :image)
+  params.require(:restaurant).permit(:name, :tel, :adress, :opening_hours, :description, :image, :category_id)
 end
 
 end
